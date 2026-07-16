@@ -1,0 +1,53 @@
+name: Bug report / 问题报告
+description: Report a reproducible defect or compatibility problem / 报告可复现问题或兼容性异常
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include passwords, pairing codes, private keys, private network layouts, or sensitive files.
+        请勿包含密码、配对码、私钥、私有网络结构或敏感文件。
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened? / 出现了什么问题？
+      placeholder: Describe the expected and actual behavior. / 请描述预期和实际行为。
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps / 复现步骤
+      placeholder: "1. Open…\n2. Select…\n3. Observe…"
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and version / 浏览器与版本
+      placeholder: Safari 18.x / Chrome 140.x
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and operating system / 设备与系统
+      placeholder: iPhone 16 · iOS 19.x / Pixel 9 · Android 16
+    validations:
+      required: true
+  - type: dropdown
+    id: installed
+    attributes:
+      label: Launch mode / 启动方式
+      options:
+        - Browser tab / 浏览器标签页
+        - Installed PWA / 已安装 PWA
+        - Both / 两者都有
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Sanitized screenshots or notes / 已脱敏截图或补充说明
+      description: Remove addresses, names, tokens and file contents first. / 请先移除地址、名称、令牌与文件内容。

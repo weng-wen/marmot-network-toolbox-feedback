@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Open Marmot Network Toolbox / 打开土拨鼠的网络工具箱
+    url: https://network.acgmole.top
+    about: Reproduce the issue with the current PWA before reporting. / 请先在当前 PWA 中确认问题。
